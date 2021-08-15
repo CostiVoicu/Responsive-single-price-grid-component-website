@@ -39,7 +39,10 @@ body{
                 padding-top: 2.9rem;
             }
             &__title{
-                @include title($primary-color-cyan)
+                @include title($primary-color-cyan);
+                @media (min-width: $desktop-size){
+                    font-size: $font-size + 10px;
+                }
             }
             &__highlight{
                 color: $primary-color-bright-yellow;
