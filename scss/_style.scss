@@ -1,0 +1,19 @@
+@import './variables';
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title($color) {
+    color: $color;
+    font-weight: $big-font-weight;
+    font-size: $font-size + 3px;
+}
+
+@mixin paragraph($color) {
+    font-size: $font-size - 1.2px;
+    color: $color;
+    font-weight: $regular-font-weight;
+}
